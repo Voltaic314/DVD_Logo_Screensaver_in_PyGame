@@ -1,13 +1,13 @@
-import pygame
-from pygame import mixer
-import sys
 import random
+import sys
+
+import pygame
 
 
 def main(self):
 
     self.init()
-    mixer.init()
+    pygame.mixer.init()
     clock = self.time.Clock()
     SCREEN_WIDTH = 1280
     SCREEN_HEIGHT = 720
@@ -31,7 +31,7 @@ def main(self):
 
     wall_hit_sound = pygame.mixer.Sound('wall_hit_beep_sound.wav')
 
-    mixer.music.set_volume(1)
+    pygame.mixer.music.set_volume(1)
 
     walls_hit_counter = 0
     corners_hit_counter = 0
